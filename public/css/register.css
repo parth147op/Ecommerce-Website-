@@ -1,0 +1,66 @@
+.signupbackground{
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.signupcard{
+    width: 40%;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.signupcard input[type="text"],.signupcard input[type="email"],.signupcard input[type="password"],.signupcard input[type="number"],.signupcard textarea{
+    background-color: aliceblue;
+  border: 1px solid grey;
+  width: 220px;
+  padding: 10px;
+  margin: 10px;
+  font-size:15px;
+}
+.signupcard .productimg input[type="text"]{
+  background-color: aliceblue;
+  border: 1px solid grey;
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  font-size:15px;
+}
+.signupcard textarea{
+  background-color: aliceblue;
+  border: 1px solid grey;
+  width: 500px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  font-size:15px;
+}
+.signupcard button{
+    display: flex;
+  margin: 10px;
+  height: 40px;
+  align-items: center;
+  width: 90px;
+  background-color: teal;
+  color: white;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.agreement{
+    font-size: 13px;
+    display:flex;
+    margin:10px;
+}
+.forgotpassword{
+    display: flex;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+}

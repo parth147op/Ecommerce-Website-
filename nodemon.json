@@ -1,0 +1,6 @@
+{
+    "env":{
+        "MONGOURI":"mongodb://localhost:27017/Parthjs",
+        "PORT":4000
+    }
+}

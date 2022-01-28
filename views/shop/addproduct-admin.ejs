@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/942a6c5297.js" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="announcement">
+      Super Deal! Free Shipping on Orders Over
+      <i class="fas fa-rupee-sign"></i> 500
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="left">
+          <div class="language">EN</div>
+          <div class="searchContainer">
+            <input type="text" placeholder="search product" /><button></button>
+          </div>
+          <% if(isAdmin){%>
+            <div class="menuitem">
+              <a href="/getproducts">GetProduct</a>
+            </div>
+            <div class="menuitem">
+              <a href="/addproduct">AddProduct</a>
+            </div>
+            <% }%>
+        </div>
+        <div class="center">
+          <div class="logo">
+            <a href="/">Parth.js</a>
+          </div>
+        </div>
+        <div class="right">
+            <% if(!isAuthenticated){%>
+          <div class="menuitem">
+            <a href="/register">register</a>
+          </div>
+          <div class="menuitem">
+            <a href="/login">login</a>
+          </div>
+          <% }%>
+          <% if(isAuthenticated){%>
+          <div class="menuitem">
+            <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="menuitem">
+              <form action="/logout" method="POST"><button type="submit">logout</button></form>
+          </div>
+          <% }%>
+        </div>
+      </div>
+    </div>
+    <div class="signupbackground">
+        <div class="signupcard">
+            <h1 class="title">Add New Product</h1>
+            <form action="/postaddproduct" method="POST">
+            <input type="text" name="producttitle" placeholder="product title">
+            <input type="number" name="productprice" placeholder="product price">
+            <div class="productimg">
+            <input type="text" name="productimg" placeholder="product image url">
+            </div>
+            <textarea type="text" name="productdescription" id="description"
+            placeholder="product description"></textarea>
+            <div class="productimg">
+            <input type="text" name="productsize" placeholder="size(i.e. 5,6,7,X,XL)"></div>
+            <div class="productimg">
+            <input type="text" name="productcategories" placeholder="categories(i.e. sportswear,shoes)"></div>
+            <div class="productimg">
+                <input type="text" name="productcolor" placeholder="color(i.e. white,black)"></div>
+            <button type="submit">Add Product</button>
+
+          </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="left">
+            <h1 class="heading">Parth.js</h1>
+            <div class="desc">
+                There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected
+                humour, or randomised words which don't look even slightly
+                believable.
+            </div>
+            <div class="socialmedia">
+                <button type="submit"><i class="fab fa-instagram"></i></button>
+                <button type="submit"><i class="fab fa-github"></i></button>
+                <button type="submit"><i class="fab fa-twitter"></i></button>
+                <button type="submit"><i class="fab fa-youtube"></i></button>
+            </div>
+        </div>
+        <div class="center">
+            <div class="links">UseFul Links</div>
+            <div class="lists">
+                <div class="listitem">Home</div>
+                <div class="listitem">Cart</div>
+                <div class="listitem">Man Fashion</div>
+                <div class="listitem">Woman Fashion</div>
+                <div class="listitem">Accessories</div>
+                <div class="listitem">My Account</div>
+                <div class="listitem">Order Tracking</div>
+                <div class="listitem">Wishlist</div>
+                <div class="listitem">Terms</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="links">Contact</div>
+            <div class="address">XYZ STREET , ANAND , GUJARAT</div>
+            <div class="phone">+91 701 636 7996</div>
+            <div class="email">mr.parth147@gmail.com</div>
+            <img src='https://i.ibb.co/Qfvn4z6/payment.png'>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+.container2{
+    background-color: aliceblue;
+}
+.title{
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.shoppingbtn{
+    display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+.contshopbtn{
+    background-color: teal;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.checkoutbtn{
+    background-color: white;
+  color: teal;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.productsummary{
+    display: flex;
+  justify-content: space-between;
+}
+.ourproducts{
+    flex: 2;
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.title2{
+    padding-left: 30px;
+}
+.product{
+    display: flex;
+  height: 30vh;
+  margin: 10px;
+}
+.productimg{
+    flex: 2;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.productimg img{
+    width:70%;
+}
+.removebtn button:hover{
+    background-color: white;
+    color: red;
+    transition: all 1s;
+}
+.removebtn button{
+    float: right;
+  margin-top: -50px;
+  margin-right: 40px;
+  font-size: 15px;
+  padding: 7px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.productdesc{
+    flex: 4;
+  padding-left: 20px;
+}
+.producttitle{
+    margin-top: 0px;
+}
+.productid{
+    padding-bottom: 10px;
+}
+.productsize{
+    padding-bottom: 10px;
+    padding-left:0px;
+}
+.productquantity{
+    padding-bottom: 10px;
+}
+
+.cartsummary{
+    border: 1px solid grey;
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.summarydesc{
+    padding: 10px;
+}
+.summarydesc button{
+    background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 14px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width:100%;
+  margin-top:20px;
+}
+.productcost{
+    padding: 10px;
+}
+.discount{
+    padding: 10px;
+}
+.shoppedcharges{
+    padding: 10px;
+}
+.totalamt{
+    padding: 10px;
+}
