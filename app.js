@@ -7,8 +7,9 @@ const mongodbStore = require("connect-mongodb-session")(session);
 
 const User = require('./models/user');
 const app = express();
+const MONGOURI = `mongodb+srv://Parth147:parth001@cluster0.aztrh.mongodb.net/Ecommerce?retryWrites=true&w=majority`;
 const store = new mongodbStore({
-    uri: process.env.MONGOURI,
+    uri: MONGOURI,
   collection: "session"
 })
 app.set("view engine", "ejs");
@@ -37,11 +38,11 @@ app.use((req,res,next)=>{
 })
 app.use(shopRoutes);
 app.use(authRoutes);
-mongoose.connect(`mongodb+srv://Parth147:parth001@cluster0.aztrh.mongodb.net/Ecommerce?retryWrites=true&w=majority`).then
+mongoose.connect(MONGOURI).then
 (connect=>{
     console.log(`Connection with database mongodb://localhost:27017/Parthjs successfull!!!`)
 }).then(result=>{
-    app.listen(4000,()=>{
+    app.listen(process.env.PORT || 8080,()=>{
         console.log('App is running on PORT:4000');
     })
 }).catch(err=>console.log(err));
