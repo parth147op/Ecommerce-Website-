@@ -38,11 +38,12 @@ app.use((req,res,next)=>{
 })
 app.use(shopRoutes);
 app.use(authRoutes);
+const PORT = process.env.PORT || '8080';
 mongoose.connect(MONGOURI).then
 (connect=>{
     console.log(`Connection with database mongodb://localhost:27017/Parthjs successfull!!!`)
 }).then(result=>{
-    app.listen(process.env.PORT || 8080,()=>{
-        console.log('App is running on PORT:4000');
+    app.listen(process.env.PORT || PORT,()=>{
+        console.log('App is running on PORT:8080');
     })
 }).catch(err=>console.log(err));
