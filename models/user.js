@@ -25,25 +25,26 @@ const userSchema = new Schema({
             productId:{type:Schema.Types.ObjectId,ref:'Product',required:true},
             producttitle:{
                 type:String,
-                required:true
+                required:false
             },
             productprice:{
                 type:Number,
-                required:true
+                required:false
             },
             productimg:{
                 type:String,
-                required:true
+                required:false
             },
             quantity:{
                 type:Number,
-                required:true
+                required:false
             }
         }],
         totalprice:{
             type:Number,
-            required:true
-        }
+            required:false
+        },
+        required:false
     }
 })
 

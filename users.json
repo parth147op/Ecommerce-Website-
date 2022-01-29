@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "61eaf3357baaad2c3ab5703e"
+  },
+  "username": "Dungeon_Master69",
+  "email": "dungeon_master@hotmail.com",
+  "password": "$2a$12$C9BjoJfTLIWFp47b/YTnyu5.Tpnguls2qUer8l1yyAhtCyOj98lLC",
+  "cart": {
+    "items": []
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61eaf5f428fce57be4d0aa5a"
+  },
+  "username": "Parth Patel",
+  "email": "mr.parth147@gmail.com",
+  "password": "$2a$12$E1MvKghj4OX4efJljwcWbuOR/t55MIAHYp/1ykrYEoKBTC2XJDEfe",
+  "isAdmin": true,
+  "cart": {
+    "items": [
+      {
+        "productId": {
+          "$oid": "61d2f1ee24766a95108be0fe"
+        },
+        "producttitle": "nike running shoes",
+        "productprice": 5500,
+        "productimg": "https://n2.sdlcdn.com/imgs/g/0/i/Nike-Multi-Color-Casual-Shoes-SDL051199315-2-bc4ad.JPG",
+        "quantity": 2,
+        "_id": {
+          "$oid": "61efeea85cb0d599763fb15f"
+        }
+      },
+      {
+        "productId": {
+          "$oid": "61d54b187854f0abc77fda59"
+        },
+        "producttitle": "Mens-Jake-Guitar-Vintage-Crusher-Tee t-shirt",
+        "productprice": 1500,
+        "productimg": "https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+        "quantity": 3,
+        "_id": {
+          "$oid": "61efeebd5cb0d599763fb171"
+        }
+      }
+    ],
+    "totalprice": 15500
+  },
+  "__v": 6
+},{
+  "_id": {
+    "$oid": "61ee855402f044a50b15c66a"
+  },
+  "username": "parth147",
+  "email": "parthpatel@gmail.com",
+  "password": "$2a$12$NW6vFjpICCgUQbTaT0J3V.GJ3IE/0XfCizdAwHbxa5qFcm6a1Qtdq",
+  "isAdmin": false,
+  "cart": {
+    "items": [
+      {
+        "productId": {
+          "$oid": "61d2f25524766a95108be106"
+        },
+        "producttitle": "puma running shoes",
+        "productprice": 5400,
+        "productimg": "https://n4.sdlcdn.com/imgs/g/z/p/Puma-Men-EF-Cushion-Slipon-SDL278721639-2-fa300.jpg",
+        "quantity": 1,
+        "_id": {
+          "$oid": "61f0e334e6f07abc005da9e8"
+        }
+      },
+      {
+        "productId": {
+          "$oid": "61d54b187854f0abc77fda59"
+        },
+        "producttitle": "Mens-Jake-Guitar-Vintage-Crusher-Tee t-shirt",
+        "productprice": 1500,
+        "productimg": "https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+        "quantity": 2,
+        "_id": {
+          "$oid": "61f0e342e6f07abc005da9f5"
+        }
+      },
+      {
+        "productId": {
+          "$oid": "61d54d187854f0abc77fda65"
+        },
+        "producttitle": "vintage-industries-arrow-jacket-forest ",
+        "productprice": 2000,
+        "productimg": "https://cdn.webshopapp.com/shops/224066/files/346138437/vintage-industries-arrow-jacket-forest.jpg",
+        "quantity": 2,
+        "_id": {
+          "$oid": "61f0e353e6f07abc005daa0f"
+        }
+      }
+    ],
+    "totalprice": 12400
+  },
+  "__v": 4
+}]
