@@ -138,7 +138,7 @@ exports.postReset = (req, res, next) => {
           subject: "Signup",
           html: `
                 <p>You requested to Reset password.....</p>
-                <p><a href="http://localhost:4000/reset/${token}">Click here to reset password</a>....</p>
+                <p><a href="https://parthecommercejs.herokuapp.com/reset/${token}">Click here to reset password</a>....</p>
                 
               `,
         };
