@@ -1,109 +1,147 @@
-body{
-    margin:0px;
-    font-family: 'Roboto Mono', monospace;
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
 }
-.announcement{
-    height: 30px;
-    background-color:teal;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    font-weight: 700;
+
+a {
+  text-decoration: none;
+  color: black;
 }
-.container{
-    height: 100px;
-    background-color:azure;
-    padding-bottom:20px;
+
+.container, .categoriescontainer, .newsletter, .footer {
+  padding: 2rem;
 }
-.wrapper{
-    padding:0px 20px;
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
+
+.announcement, .searchContainer button, .inputcontainer button, .socialmedia button {
+  background-color: teal;
+  color: white;
 }
-.wrapper .left{
-    flex:1;
-    display:flex;
-    align-items: center;
+
+.announcement, .container, .wrapper .left, .wrapper .right, .footer .left, .footer .center, .footer .right {
+  display: flex;
+  align-items: center;
 }
-.language{
-    font-size:14;
-    cursor:pointer;
-    margin-top: 20px;
+
+.announcement {
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2rem;
+  background-color: teal;
 }
-.searchContainer{
-    border:2px solid lightgrey;
-    align-items:center;
-    margin-left:25px;
-    padding:5px;
-    margin-top: 20px;
-    border-radius:10px;
-    width:200px;
+
+.container {
+  background-color: azure;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
 }
-.searchContainer input[type=text]{
-    border:none;
-    outline:none; 
-    background-color:azure;  
-    width:170px;
+
+.wrapper {
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  width: 100%; /* Ensure the wrapper takes the full width of its parent */
 }
-.searchContainer button{
-    background-color:azure;  
-    border:none;   
-    cursor:pointer; 
+
+.wrapper .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
 }
-.wrapper .center{
-    flex:1;
-    text-align: center;
-    margin-top: 20px;
+
+.wrapper .left .language {
+  margin-left: 0; /* Remove margin for the extreme left item */
 }
-.logo{
-    font-weight:bold;
-    font-size:50px;
+
+.wrapper .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
-.wrapper .right{
-    flex:1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+
+.wrapper .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
-.menuitem{
-    font-size:16px;
-    cursor:pointer;
-    margin-left:30px;
-    font-weight:bold;
-    margin-top: 20px;
+
+.wrapper .right .menuitem:first-child {
+  margin-left: 0; /* Remove margin for the first item in the right section */
 }
-a{
-    text-decoration:none;
-    color:black;
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  border: 2px solid lightgrey;
+  padding: 0.3rem;
+  border-radius: 0.625rem;
 }
-.categoriescontainer{
-    background-color:beige;
-    display:flex;
-    padding:50px;
-    flex-wrap:wrap;
+
+.searchContainer input[type=text] {
+  border: none;
+  outline: none;
+  background-color: azure;
+  flex-grow: 1;
+  padding: 0.3rem;
+  width: 100%;
 }
-.categoryitem{
-    margin: 7px;
-  height: 60vh;
+
+.searchContainer button {
+  background-color: azure;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0 1.0rem;
+  padding-right: 1.25rem;
+}
+
+.menuitem {
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+
+.productheading{
+  margin-top: 0.625rem;
+  text-align: center;
+  background-color: beige;
+  padding: 1.25rem;
+  margin-bottom: 0.625rem;
+  font-size: 3.125rem;
+}
+.categoriescontainer {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categoryitem {
   position: relative;
   cursor: pointer;
-  width:400px;
-  /* &:hover ${Button}{
-    background-color:aliceblue;
-    transition:all 1.5s;
-    
-  } */
+  margin: 0.5rem;
+  height: 60vh;
+  width: 25rem;
 }
-.categoryitem img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.categoryitem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.info{
-    position: absolute;
+
+.info {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -113,241 +151,242 @@ a{
   align-items: center;
   justify-content: center;
 }
-.info .title{
-    color:white;
-    margin-bottom: 20px;
+
+.info .title {
+  color: white;
+  margin-bottom: 1.25rem;
 }
-.categoryitem .info button{
-    border:2px solid grey;
-    padding: 10px;
-    background-color: transparent;
-    color:gray;
-    cursor: pointer;
-    font-weight: bold;
+
+.categoryitem .info button {
+  border: 2px solid grey;
+  padding: 0.625rem;
+  background-color: transparent;
+  color: gray;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 1s;
 }
-.categoryitem .info button:hover{
-    background-color: gray;
-    color:white;
-    transition: all 1s;
-    border:2px solid white;
+
+.categoryitem .info button:hover {
+  background-color: gray;
+  color: white;
+  border: 2px solid white;
 }
-.newsletter{
-    background-color:azure;
-    height:60vh;
-    align-items: center;
-    justify-content: center;
-    display:flex;
-    flex-direction:column;
-}
-.newsletter .title{
-    font-size:60px;
-    margin-top:30px;
-}
-.description{
-    font-size:25px;
-}
-.inputcontainer{
-    margin-top:40px;
-    border:1px solid grey;
-    display:flex;
-    border-radius:10px;
-}
-.inputcontainer input[type=email]{
-    width:700px;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:15px;
-    font-size:15px;
-    outline:none;
-    border-radius:10px;
-    border:none;
-}
-.inputcontainer button{
-    border: none;
-    background-color: teal;
-    color: white;
-    border-radius:10px;
-    width:40px;
-}
-.footer{
-    height: 50vh;
-  background-color: aliceblue;
-  margin-top: 20px;
+
+.newsletter {
+  background-color: azure;
   display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-}
-.footer .left{
-    flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.footer .left .heading{
-    padding-left: 20px;
-  font-style: bolder;
-}
-.desc{
-    padding-top: 20px;
-  padding-left: 15px;
-}
-.socialmedia{
-    display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 30px;
-  margin-left: 40px;
+  height: 60vh;
 }
-.socialmedia button{
-    margin-left: 20px;
-  border: pink;
+
+.newsletter .title {
+  font-size: 3.75rem;
+  margin-top: 1.875rem;
+}
+
+.description {
+  font-size: 1.5625rem;
+}
+
+.inputcontainer {
+  margin-top: 2.5rem;
+  border: 1px solid grey;
+  display: flex;
+  border-radius: 0.625rem;
+}
+
+.inputcontainer input[type=email] {
+  width: 43.75rem;
+  padding: 0.625rem 0.9375rem;
+  font-size: 0.9375rem;
+  outline: none;
+  border: none;
+  border-radius: 0.625rem;
+}
+
+.footer {
+  background-color: aliceblue;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+.footer .left, .footer .center, .footer .right {
+  flex: 1;
+  padding: 0 0.625rem;
+}
+
+.footer .left .heading {
+  padding-left: 1.25rem;
+}
+
+.desc {
+  padding-top: 1.25rem;
+  padding-left: 0.9375rem;
+}
+
+.socialmedia {
+  margin-top: 1.875rem;
+  margin-left: 2.5rem;
+}
+
+.socialmedia button {
+  margin-left: 1.25rem;
   background-color: #e95950;
-  width: 30px;
-  height: 30px;
-  border-radius:20px;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
 }
-.footer .center{
-    flex: 1;
+
+.links {
+  padding-left: 1.25rem;
+  padding-top: 0.625rem;
 }
-.links{
-    padding-left: 20px;
-  padding-top: 10px;
-}
-.lists{
-    margin: 0;
-  padding-top: 30px;
-  padding-left: 20px;
+
+.lists {
+  padding-top: 1.875rem;
+  padding-left: 1.25rem;
   font-weight: 500;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-.listitem{
-    width: 50%;
-  margin-bottom: 15px;
+
+.listitem {
+  width: 50%;
+  margin-bottom: 0.9375rem;
 }
-.footer .right{
-    flex: 1;
+
+.address, .phone, .email {
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
 }
-.address{
-    padding-top: 30px;
-  padding-left: 20px;
+
+.right img {
+  padding-top: 1.875rem;
+  padding-left: 1.25rem;
 }
-.phone{
-    padding-top: 20px;
-  padding-left: 20px;
+
+.productheading {
+  text-align: center;
+  background-color: beige;
+  padding: 1.25rem;
+  margin-bottom: 0.625rem;
+  font-size: 3.125rem;
 }
-.email{
-    padding-top: 20px;
-  padding-left: 20px;
-}
-.right img{
-    padding-top: 30px;
-  padding-left: 20px;
-}
-.productheading{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: beige;
-    padding: 20px;
-    margin: 0px;
-    margin-bottom: 10px;
-    font-size: 50px;
-}
-.productlist{
-    padding: 20px;
+
+.productlist {
   background-color: beige;
   display: flex;
   flex-wrap: wrap;
 }
-.products{
-    flex: 1;
-  margin: 10px;
-  min-width: 280px;
-  height: 350px;
+
+.products {
+  flex: 1;
+  margin: 0.625rem;
+  min-width: 17.5rem;
+  height: 21.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: azure;
   position: relative;
-  border:1px solid azure;
-  border-radius:20px;
-  /* &:hover ${Info}{
-    opacity: 1;
-  } */
+  border: 1px solid azure;
+  border-radius: 1.25rem;
 }
-.products img{
-    height: 65%;
-  z-index: 2;
+
+.products img {
+  height: 65%;
 }
-.products .info .icons{
-    width: 40px;
-  height: 40px;
+
+.products .info .icons {
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 0.625rem;
   transition: all 0.5s ease;
-  /* &:hover {
-    background-color: #e9f5f5;
-    transform: scale(1.1);
-  } */
 }
-.products .info .icons:hover{
-    background-color: #e9f5f5;
-    transform: scale(1.1);
+
+.products .info .icons:hover {
+  background-color: #e9f5f5;
+  transform: scale(1.1);
 }
-.products .info{
-    opacity: 0;
+
+.products .info {
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 3;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border:1px solid azure;
-  border-radius:20px;
+  border: 1px solid azure;
+  border-radius: 1.25rem;
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
 }
-.info .icons button{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
+
+.products .info:hover {
+  opacity: 1;
+}
+
+.products-cat {
+  background-color: beige;
+}
+
+.products-cat .title {
+  padding: 1.25rem;
+}
+
+.filtercontainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  transition: all 0.5s ease;
-  cursor: pointer;
+  margin-left: 1.875rem;
 }
-.products .info:hover{
-    opacity: 1;
+
+.filtertitle {
+  padding-right: 1.875rem;
+  padding-left: 2.5rem;
 }
-.products-cat{
-    background-color: beige;
+
+.filtercontainer .filter {
+  display: flex;
 }
-.products-cat .title{
-    padding:20px;
+
+.filtercontainer .filter select {
+  padding: 0.625rem;
 }
-.filtercontainer{
-    display: flex;
-  margin-left: 30px;
+
+/* ... Your existing CSS ... */
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust styles for tablets */
+  .categoryitem {
+      width: 45%; /* Adjust the width for category items on tablets */
+  }
+
+  .searchContainer input[type=text] {
+      width: 80%; /* Adjust the width for the search input on tablets */
+  }
 }
-.filtertitle{
-    padding-right: 30px;
-  padding-left: 40px;
-}
-.filtercontainer .filter{
-    display: flex;
-}
-.filtercontainer .filter select{
-    padding: 10px;
+
+/* For desktops and laptops */
+@media (min-width: 1024px) {
+  /* Adjust styles for desktops and laptops */
+  .categoryitem {
+      width: 23%; /* Adjust the width for category items on desktops/laptops */
+  }
+
+  .searchContainer input[type=text] {
+      width: 90%; /* Adjust the width for the search input on desktops/laptops */
+  }
 }
